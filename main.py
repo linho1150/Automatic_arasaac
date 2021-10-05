@@ -4,6 +4,9 @@ import json
 import urllib.request
 import sys
 import re
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 direction = 0
 subDirection = 0
